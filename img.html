@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <div class="content"id="content">
+   <img src="ab.jpg"width="1000"height="400" id="abc">
+   <h1 id="ab">Change image 1</h1>
+   <h2 id="bc">change image 2</h2></center>
+   </div>
+   <script>
+    document.getElementById("abc").addEventListener("mouseover",change1);
+    document.getElementById("abc").addEventListener("mouseout",change2);
+    function change1()
+    {
+        document.getElementById('abc').src="cd.jpg";
+        document.getElementById('ab').style.display="none";
+        document.getElementById('bc').style.display="block";
+
+    }
+    function change2()
+    {
+        document.getElementById('abc').src="bc.jpg";
+        document.getElementById('ab').style.display="block";
+        document.getElementById('bc').style.display="none";
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
